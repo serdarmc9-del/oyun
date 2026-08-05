@@ -25,7 +25,7 @@ jobs:
             git zip unzip openjdk-17-jdk python3-pip autoconf libtool \
             pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev \
             libsqlite3-dev cmake libffi-dev libssl-dev ffmpeg
-          pip install --upgrade pip setuptools buildozer cython
+          pip install --upgrade pip setuptools "cython<3.0.0" buildozer
 
       - name: Build APK with Buildozer
         run: |
