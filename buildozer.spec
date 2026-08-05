@@ -5,12 +5,12 @@ package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,json
 version = 0.1
-requirements = python3,kivy==2.3.0
+requirements = python3,kivy==2.2.1
 orientation = portrait
 osx.kivy_version = 0.21.0
 
-# Android Sürüm / NDK Sabitlemeleri (Uyumsuzluğu Çözen Kısım)
-android.api = 33
+# Android SDK / NDK Sabit Sürümleri (Çakışmayı Engelleyen Ayarlar)
+android.api = 31
 android.minapi = 21
 android.ndk = 25b
 android.accept_sdk_license = True
