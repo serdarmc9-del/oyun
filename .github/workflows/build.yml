@@ -25,11 +25,11 @@ jobs:
             git zip unzip openjdk-17-jdk python3-pip autoconf libtool \
             pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev \
             libsqlite3-dev cmake libffi-dev libssl-dev ffmpeg
-          pip install --upgrade pip setuptools "cython<3.0.0" buildozer
+          pip install --upgrade pip setuptools "cython<3.0.0" "buildozer==1.5.0"
 
       - name: Build APK with Buildozer
         run: |
-          buildozer -v android debug
+          yes | buildozer -v android debug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
